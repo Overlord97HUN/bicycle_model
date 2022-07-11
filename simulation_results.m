@@ -1,6 +1,9 @@
 clear all
 desired_lateral_position =0.1;
 steering_wheel_angle = 3;
+PID_proportional_gain = 3;
+PID_integration_gain = 0.02;
+PID_derivative_gain = 10;
 
 trajectory = timeseries([0, 0, 0.2, 0.4, 0.6, 0.8, 0.9, 1, 1, 1,1,1,1,1,1,1,1,1,1,1], (0:19));
 
